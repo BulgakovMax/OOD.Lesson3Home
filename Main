@@ -1,0 +1,43 @@
+package com.gmail.v.bulgakov.v;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Student max = new Student("Max", "Ukraine", 20, 60.5, 177.2, "M&CT", "CIT&MT", 4.2);
+		Student darya = new Student("Darya", "Belarussian", 22, 90.5, 187.2, "M&CT", "CIT&MT", 4.3);
+		Student anton = new Student("Anton", "Ukraine", 21, 50.2, 164.8, "M&CT", "CIT&MT", 4.1);
+		Student alex = new Student("Alexander", "Ukraine", 21, 70.7, 173.8, "M&CT", "CIT&MT", 4.6);
+		Student andrey = new Student("Andrey", "Ukraine", 23, 72.5, 170.2, "M&CT", "CIT&MT", 3.3);
+		Student fedya = new Student("Fedor", "Polska", 22, 88.2, 188.2, "M&CT", "CIT&MT", 3.9);
+		Student victoriya = new Student("Victoriya", "Ukraine", 20, 49.5, 161.2, "M&CT", "CIT&MT", 4.9);
+		Student antonD = new Student("Anton.D", "Ukraine", 22, 80.5, 174.2, "M&CT", "CIT&MT", 4.7);
+		Student annya = new Student("Annya", "Ukraine", 21, 63.1, 166.4, "M&CT", "CIT&MT", 4.5);
+		Student ira = new Student("Irina", "Ukraine", 21, 55.5, 173.2, "M&CT", "CIT&MT", 4.6);
+
+		Group group = new Group();
+
+		try {
+			group.add(max);
+			group.add(darya);
+			group.add(anton);
+			group.add(alex);
+			group.add(andrey);
+			group.add(fedya);
+			group.add(victoriya);
+			group.add(antonD);
+			group.add(annya);
+			group.add(ira);
+
+		} catch (GroupFullException e) {
+			e.printStackTrace();
+		}
+		System.out.println(group);
+		group.deleteStudent(alex);
+		group.deleteStudent(ira);
+		System.out.println(group);
+		System.out.println(group.searchStudent("fedor"));
+
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.gmail.v.bulgakov.v;
+
+public class GroupFullException extends Exception {
+	@Override
+	public String getMessage() {
+		return " Group is full, 10 students";
+	}
+
+}

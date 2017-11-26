@@ -1,0 +1,76 @@
+package com.gmail.v.bulgakov.v;
+
+public class Human {
+
+	private String name;
+	private String nationality;
+	private int age;
+	private double hieght;
+	private double weight;
+
+	public Human(String name, String nationality, int age, double hieght, double weight) {
+		super();
+		this.name = name;
+		this.nationality = nationality;
+		this.age = age;
+		this.hieght = hieght;
+		this.weight = weight;
+	}
+
+	public Human(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+
+	public Human() {
+
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getNationality() {
+		return nationality;
+	}
+
+	public void setNationality(String nationality) {
+		this.nationality = nationality;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public double getHieght() {
+		return hieght;
+	}
+
+	public void setHieght(double hieght) {
+		this.hieght = hieght;
+	}
+
+	public double getWeight() {
+		return weight;
+	}
+
+	public void setWeight(double weight) {
+		this.weight = weight;
+	}
+
+	@Override
+	public String toString() {
+		return "Human [name=" + name + ", nationality=" + nationality + ", age=" + age + ", hieght=" + hieght
+				+ ", weight=" + weight + "]";
+	}
+
+}

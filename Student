@@ -1,0 +1,52 @@
+package com.gmail.v.bulgakov.v;
+
+public class Student extends Human {
+
+	private String faculty;
+	private String department;
+	private double averageRating;
+
+	public Student(String name, String nationality, int age, double hieght, double weight, String faculty,
+			String department, double averageRating) {
+		super(name, nationality, age, hieght, weight);
+		this.faculty = faculty;
+		this.department = department;
+		this.averageRating = averageRating;
+	}
+
+	public Student() {
+
+	}
+
+	public String getFaculty() {
+		return faculty;
+	}
+
+	public void setFaculty(String faculty) {
+		this.faculty = faculty;
+	}
+
+	public String getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(String department) {
+		this.department = department;
+	}
+
+	public double getAverageRating() {
+		return averageRating;
+	}
+
+	public void setAverageRating(double averageRating) {
+		this.averageRating = averageRating;
+	}
+
+	@Override
+	public String toString() {
+		return " [name=" + getName() + ", faculty=" + faculty + ", department=" + department + ", averageRating="
+				+ averageRating + "]" + '\n';
+
+	}
+
+}

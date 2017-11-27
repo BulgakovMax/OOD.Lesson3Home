@@ -6,16 +6,16 @@ import java.util.Comparator;
 public class Group {
 
 	private Student[] array = new Student[10];
-	
-	public Group() {
 
-	}
-	
 	public Group(Student[] array) {
 		super();
 		this.array = array;
 	}
-	
+
+	public Group() {
+
+	}
+
 	public Student[] getArray() {
 		return array;
 	}
@@ -83,5 +83,4 @@ public class Group {
 		}
 		return "Group:" + '\n' + sb.toString();
 	}
-
 }

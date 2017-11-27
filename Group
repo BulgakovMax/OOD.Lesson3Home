@@ -7,21 +7,8 @@ public class Group {
 
 	private Student[] array = new Student[10];
 
-	public Group(Student[] array) {
-		super();
-		this.array = array;
-	}
-
 	public Group() {
 
-	}
-
-	public Student[] getArray() {
-		return array;
-	}
-
-	public void setArray(Student[] array) {
-		this.array = array;
 	}
 
 	public void add(Student addStudent) throws GroupFullException {
@@ -83,4 +70,5 @@ public class Group {
 		}
 		return "Group:" + '\n' + sb.toString();
 	}
+
 }
